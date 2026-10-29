@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Student Academic Risk Early Warning and Intervention Recommender
 
 TrackGenesis internship project 8 (team 8). The aim is to flag students at risk of failing or withdrawing using only their first 30 days of activity, explain each flag, and recommend an intervention.
@@ -67,3 +68,7 @@ Read `CONTRIBUTING.md` before your first commit. Work is tracked in Jira (projec
 ## Review 1 scope and owners
 
 See `docs/review1_scope.md`.
+=======
+# Demo_SAR_AI
+Demo of Internship
+>>>>>>> c3b4bd511ce40df5f62118d460b4cdb8b0764c72
