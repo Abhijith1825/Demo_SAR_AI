@@ -1,0 +1,39 @@
+# Data: never commit raw or generated data
+data/raw/*
+data/interim/*
+data/processed/*
+!data/**/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Secrets and local settings
+.env
+*.pem
+
+# Model artefacts and OS files. Binaries stay out (joblib can run code on load);
+# the final model's config and metrics JSON are tracked so results can be checked.
+/models/*
+!/models/final/
+/models/final/*
+!/models/final/config.json
+!/models/final/metrics.json
+*.joblib
+*.pkl
+.DS_Store
+Thumbs.db
+
+# Project virtual environment
+.sar-env/
+
+# Archives
+*.zip

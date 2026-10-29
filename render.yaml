@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: sar-ai-early-warning
+    runtime: python
+    plan: 1c-2g
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app/streamlit_app.py --server.address 0.0.0.0 --server.port $PORT --server.headless true
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.5
+      - key: SAR_DATA_DIR
+        value: /var/data
+      - key: SAR_MODELS_DIR
+        value: /var/data/models
+    disk:
+      name: sar-ai-data
+      mountPath: /var/data
+      sizeGB: 1
